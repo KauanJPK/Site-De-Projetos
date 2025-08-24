@@ -7,7 +7,7 @@ import dotenv
 import os
 
 dotenv.load_dotenv()
-client = genai.Client(api_key='AIzaSyD7ifQcRMEti0XAOtl3OzoxOgl1HPirBts')
+client = genai.Client(api_key=os.getenv('API_KEY'))
 
 
 def entrada(request):

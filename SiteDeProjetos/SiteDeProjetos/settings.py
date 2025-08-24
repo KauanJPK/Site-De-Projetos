@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-2!u1+hx&@s@_@q8aj-p(hkccpv52_)90rvsb=kpti#(y@*9!^&
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['site-de-projetos.onrender.com']
 
 INSTALLED_APPS = [
     'home',
@@ -30,6 +30,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'SiteDeProjetos.urls'
