@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import requests
-from google import genai
+from google import genai 
+
 import dotenv
 import os
 
 dotenv.load_dotenv()
-client = genai.Client(api_key=os.getenv("API_KEY"))
+client = genai.Client(api_key='AIzaSyD7ifQcRMEti0XAOtl3OzoxOgl1HPirBts')
 
 
 def entrada(request):
