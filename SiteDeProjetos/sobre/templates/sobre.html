@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'inicio/css/entradas.css' %}">
+    <title>Sobre</title>
+</head>
+<body>
+    <header>
+        <div class="logo2"><a href="http://127.0.0.1:8000/home/"><img src="{% static 'inicio/img/kauanjpk-logo2.png' %}" alt="Logo" name="logo-site"></a></div>
+        <nav name="nav-top">
+        <button data-link="http://127.0.0.1:8000/home/">Início</button>
+        <button data-link="http://127.0.0.1:8000/sobre/">Sobre</button>
+        <button data-link="http://127.0.0.1:8000/projetos/">Projetos</button>
+        <button data-link="http://127.0.0.1:8000/contato/">Contato</button>
+    </nav>
+  </header>
+<main>
+  <div name="frases">
+    <h1 name="hptitle">Sobre Mim</h1>
+    <p name="descricao"> Sou um programador, desenvolvedor web e estudante de Engenharia de Software. Tenho experiência em HTML, CSS, JavaScript, Python, Django, Bootstrap, Java e Kotlin, e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
+    <p name="descricao"> Estou atualmente trabalhando em projetos que envolvem desenvolvimento web, automação e inteligência artificial. Meu objetivo é criar soluções inovadoras e eficientes que possam impactar positivamente a vida das pessoas.</p>
+    <p name="descricao"> Estou sempre aberto a novas oportunidades e desafios, e estou ansioso para contribuir com meu conhecimento e habilidades em projetos futuros.</p>
+  </div>
+</main>
+
+
+
+
+
+
+<script src="{% static 'inicio/js/script.js' %}"></script>
+
+</body>
+</html>

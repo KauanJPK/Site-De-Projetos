@@ -1,0 +1,59 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title name="hptitle">Bem-vindo ao Site de Projetos - KauanJPK</title>
+    <link rel="stylesheet" href="{% static 'inicio/css/entradas.css' %}">
+
+</head>
+<body>
+    <header>
+    <div class="logo2"><a href="http://127.0.0.1:8000/home/"><img src="{% static 'inicio/img/kauanjpk-logo2.png' %}" alt="Logo" name="logo-site"></a></div>
+    <nav name="nav-top">
+      <button data-link="http://127.0.0.1:8000/home/">Início</button>
+      <button data-link="http://127.0.0.1:8000/sobre/">Sobre</button>
+      <button data-link="http://127.0.0.1:8000/projetos/">Projetos</button>
+      <button data-link="http://127.0.0.1:8000/contato/">Contato</button>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1 name="hptitle">Bem-vindo ao meu site de projetos</h1>
+    <h2 name="hpsubtitle">Explore meus projetos e inovações</h2>
+    <h3 name="hpauthor">KauanJPK<a href="https://github.com/KauanJPK"><img src="{% static 'inicio/img/githubico.png' %}" alt="" name="git"></a></h3>
+    <div name="descricao-container">
+    <p name="descricao">Este site irá apresentar meus projetos e inovações de forma clara e organizada, permitindo que você navegue facilmente por cada um deles.</p>
+    <p name="descricao">Você encontrará informações detalhadas sobre cada projeto, incluindo descrições, imagens e links para repositórios no GitHub.</p>
+    <p name="descricao">Este site foi criado usando estruturas básicas de HTML, CSS e Django, os quais serão utilizados para ampliar minhas habilidades e conhecimentos na área de desenvolvimento web.</p>
+    <p name="descricao">Fique à vontade para explorar e conhecer mais sobre o meu trabalho!</p>
+    </div>
+  </main>
+
+
+
+
+
+  <footer>
+    <div name="frases">
+    <div name="quote">
+        <p> Frase: {{ quote }}</p>
+    </div>
+    <div name="author">
+      <p>Autor: {{ author }}</p>
+    </div>
+    </div>
+    <p>&copy; 2025 - KauanJPK. Todos os direitos reservados.</p>
+  </footer>
+
+    <script src="{% static 'inicio/js/script.js' %}"></script>
+</body>
+</html>
+
+
+
+
