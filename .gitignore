@@ -1,2 +1,4 @@
 SiteDeProjetos/home/.env
 SiteDeProjetos/Procfile
+SiteDeProjetos/db.sqlite3
+SiteDeProjetos/requirements.txt
