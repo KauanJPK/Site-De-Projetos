@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'inicio/css/entradas.css' %}" />
     <link rel="stylesheet" href="{% static 'default/css/default.css' %}" />
     <link rel="icon" type="image/png" href="{% static 'default/img/star.png' %}">
     <title>Sobre</title>
 </head>
 <body>
     <header>
-        <div class="logo2"><a href="https://sitedeprojetoskauanjpk.fly.dev/home/"><img src="{% static 'inicio/img/kauanjpk-logo2.png' %}" alt="Logo" name="logo-site"></a></div>
-        <nav name="nav-top">
+        <div class="logo-site">
+          <a href="https://sitedeprojetoskauanjpk.fly.dev/home/">
+            <img  class="logo2" src="{% static 'inicio/img/kauanjpk-logo2.png' %}">
+          </a>
+          </div>
+        <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+        <nav class="nav-top">
         <button data-link="https://sitedeprojetoskauanjpk.fly.dev/home/">Início</button>
         <button data-link="https://sitedeprojetoskauanjpk.fly.dev/sobre/">Sobre</button>
         <button data-link="https://sitedeprojetoskauanjpk.fly.dev/projetos/">Projetos</button>
@@ -20,20 +28,16 @@
     </nav>
   </header>
 <main>
-  <div name="frases">
-    <h1 name="hptitle">Sobre Mim</h1>
-    <p name="descricao"> Sou um programador, desenvolvedor web e estudante de Engenharia de Software. Tenho experiência em HTML, CSS, JavaScript, Python, Django, Bootstrap, Java e Kotlin, e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
-    <p name="descricao"> Estou atualmente trabalhando em projetos que envolvem desenvolvimento web, automação e inteligência artificial. Meu objetivo é criar soluções inovadoras e eficientes que possam impactar positivamente a vida das pessoas.</p>
-    <p name="descricao"> Estou sempre aberto a novas oportunidades e desafios, e estou ansioso para contribuir com meu conhecimento e habilidades em projetos futuros.</p>
+  <h1 class="hptitle">Sobre Mim</h1>
+  <div class="descricao-container">
+    <p class="descricao"> Sou um programador, desenvolvedor web e estudante de Engenharia de Software. Tenho experiência em HTML, CSS, JavaScript, Python, Django, Bootstrap, Java e Kotlin, e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
+    <p class="descricao"> Estou atualmente trabalhando em projetos que envolvem desenvolvimento web, automação e inteligência artificial. Meu objetivo é criar soluções inovadoras e eficientes que possam impactar positivamente a vida das pessoas.</p>
+    <p class="descricao"> Estou sempre aberto a novas oportunidades e desafios, e estou ansioso para contribuir com meu conhecimento e habilidades em projetos futuros.</p>
   </div>
 </main>
-
-
-
-
-
-
+<footer>
+    <p>&copy; 2025 - KauanJPK. Todos os direitos reservados.</p>
+</footer>
 <script src="{% static 'default/js/script.js' %}"></script>
-
 </body>
 </html>

@@ -6,16 +6,23 @@
   <head>
     <meta charset="UTF-8" />
     <title name="hptitle">Bem-vindo ao Site de Projetos - KauanJPK</title>
-    <link rel="stylesheet" href="{% static 'inicio/css/entradas.css' %}" />
     <link rel="stylesheet" href="{% static 'default/css/default.css' %}" />
+    <link rel="stylesheet" href="{% static 'inicio/css/entradas.css' %}" />
+    
     <link rel="icon" type="image/png" href="{% static 'default/img/star.png' %}">
   </head>
   <body>
     <header>
-      <div class="logo2">
-        <a href="https://sitedeprojetos-kauanjpk.fly.dev/home/"><img src="{% static 'inicio/img/kauanjpk-logo2.png' %}" alt="Logo" name="logo-site" /></a>
+      <div class="logo-site">
+        <a href="https://sitedeprojetos-kauanjpk.fly.dev/home/">
+          <img  class="logo2" src="{% static 'inicio/img/kauanjpk-logo2.png' %}"></a>
       </div>
-      <nav name="nav-top">
+      <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+      <nav class="nav-top">
         <button data-link="https://sitedeprojetoskauanjpk.fly.dev/home">Início</button>
         <button data-link="https://sitedeprojetoskauanjpk.fly.dev/sobre">Sobre</button>
         <button data-link="https://sitedeprojetoskauanjpk.fly.dev/projetos">Projetos</button>
@@ -24,25 +31,28 @@
     </header>
 
     <main>
-      <h1 name="hptitle">Bem-vindo ao meu site de projetos</h1>
-      <h2 name="hpsubtitle">Explore meus projetos e inovações</h2>
-      <h3 name="hpauthor">KauanJPK<a href="https://github.com/KauanJPK"><img src="{% static 'inicio/img/githubico.png' %}" alt="" name="git" /></a></h3>
-      <div name="descricao-container">
-        <p class='descricao'>Este site irá apresentar meus projetos e inovações de forma clara e organizada, permitindo que você navegue facilmente por cada um deles.</p>
-        <p class='descricao'>Você encontrará informações detalhadas sobre cada projeto, incluindo descrições, imagens e links para repositórios no GitHub.</p>
-        <p class='descricao'>Este site foi criado usando estruturas básicas de HTML, CSS e Django, os quais serão utilizados para ampliar minhas habilidades e conhecimentos na área de desenvolvimento web.</p>
-        <p class='descricao'>Fique à vontade para explorar e conhecer mais sobre o meu trabalho!</p>
+      <h1 class="hptitle">Bem-vindo(a) ao meu site de projetos</h1>
+      <h2 class="hpsubtitle">Explore meus projetos e inovações</h2>
+      <h3 class="hpauthor">KauanJPK<a href="https://github.com/KauanJPK"><img src="{% static 'inicio/img/githubico.png' %}" alt="" name="git" /></a></h3>
+      <div class="descricao-container">
+        <p class="descricao">Este site irá apresentar meus projetos e inovações de forma clara e organizada, permitindo que você navegue facilmente por cada um deles.</p>
+        <p class="descricao">Você encontrará informações detalhadas sobre cada projeto, incluindo descrições, imagens e links para repositórios no GitHub.</p>
+        <p class="descricao">Este site foi criado usando estruturas básicas de HTML, CSS e Django, os quais serão utilizados para ampliar minhas habilidades e conhecimentos na área de desenvolvimento web.</p>
+        <p class="descricao">Fique à vontade para explorar e conhecer mais sobre o meu trabalho!</p>
       </div>
-    </main>
-
-    <div class="quote-container">
-      <div class="quote">
-        <p>Frase: {{ quote }}</p>
-      </div>
+      <br>
+      <br>
+      <div class="quote-container">
+        <div class="quote">
+          <p>Frase: {{ quote }}</p>
+        </div>
       <div class="author">
         <p>Autor: {{ author }}</p>
       </div>
     </div>
+    </main>
+
+   
 
     <footer>
       <p>&copy; 2025 - KauanJPK. Todos os direitos reservados.</p>
