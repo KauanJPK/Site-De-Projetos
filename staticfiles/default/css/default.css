@@ -150,6 +150,9 @@ footer {
 }
 
 .descricao-container {
+  display: flex;         
+    align-items: flex-start;
+    gap: 20px;  
   background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 8px;
@@ -248,3 +251,16 @@ h3[class="hpauthor"] {
     background: none;
   }
 }
+@media (max-width: 600px) {
+    .descricao-container {
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;     
+        gap: 10px;              
+    }
+
+    .foto-perfil {
+        width: 60px;
+        height: 60px;           
+    }
+  }
